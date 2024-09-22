@@ -15,39 +15,74 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
+    background-image: url('doubleg.tech_logo.jpg');
+    background-size: 100% auto;
+    background-position: center;
+    height: 80px; /* Adjust logo height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: sticky; /* Stick header to top */
     top: 0;
     z-index: 1000;
+    background-color: #333;
 }
 
 header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; /* Wrap nav items on smaller screens */
+    display: none; /* Hide nav on mobile */
 }
 
-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex: 1 1 100%; /* Take full width on smaller screens */
+/* Mobile Navigation */
+@media only screen and (max-width: 768px) {
+    header {
+        background-size: 50% auto;
+        height: 60px;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #333;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        display: none;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin-right: 0;
+    }
+
+    /* Show mobile nav on click */
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 24px;
+        cursor: pointer;
+    }
 }
 
-header nav ul li {
-    margin-right: 20px;
-    flex: 1 1 100%; /* Take full width on smaller screens */
-    text-align: center;
-}
+/* Desktop Navigation */
+@media only screen and (min-width: 769px) {
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-header nav a {
-    color: #fff;
-    text-decoration: none;
+    header nav ul {
+        flex-direction: row;
+    }
 }
 
 /* Hero Styles */
@@ -168,7 +203,7 @@ footer {
         height: 50vh;
     }
 
-    .portfolio-items div {
+        .portfolio-items div {
         width: calc(50% - 20px);
     }
 
@@ -194,4 +229,4 @@ footer {
     #contact input, #contact textarea {
         padding: 0.2rem;
     }
-}
+} 
