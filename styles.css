@@ -49,3 +49,126 @@ header nav a {
     background-position: 0% 100%;
     height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* About Styles */
+#about {
+    padding: 2rem;
+}
+
+#about h2 {
+    margin-bottom: 1rem;
+}
+
+/* Services Styles */
+#services {
+    padding: 2rem;
+    background-color: #f7f7f7;
+}
+
+#services ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#services li {
+    margin-bottom: 1rem;
+}
+
+#services h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* Portfolio Styles */
+#portfolio {
+    padding: 2rem;
+}
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-items div {
+    margin: 1rem;
+    width: calc(33.33% - 20px);
+}
+
+.portfolio-items img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Contact Styles */
+#contact {
+    padding: 2rem;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact input, #contact textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#contact button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    clear: both;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    /* For mobile phones and tablets */
+    .hero {
+        height: 50vh;
+    }
+
+    .portfolio-items div {
+        width: calc(50% - 20px);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* For smaller mobile phones */
+    .hero {
+        height: 30vh;
+    }
+
+    .portfolio-items div {
+        width: 100%;
+    }
+}
