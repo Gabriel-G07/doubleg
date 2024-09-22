@@ -10,6 +10,7 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f9f9f9;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Header Styles */
@@ -18,12 +19,16 @@ header {
     color: #fff;
     padding: 1rem;
     text-align: center;
+    position: sticky; /* Stick header to top */
+    top: 0;
+    z-index: 1000;
 }
 
 header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Wrap nav items on smaller screens */
 }
 
 header nav ul {
@@ -31,10 +36,13 @@ header nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    flex: 1 1 100%; /* Take full width on smaller screens */
 }
 
 header nav ul li {
     margin-right: 20px;
+    flex: 1 1 100%; /* Take full width on smaller screens */
+    text-align: center;
 }
 
 header nav a {
@@ -52,6 +60,7 @@ header nav a {
     justify-content: center;
     align-items: center;
     color: #fff;
+    position: relative; /* Allow absolute positioning */
 }
 
 .hero h1 {
@@ -105,6 +114,7 @@ header nav a {
 .portfolio-items div {
     margin: 1rem;
     width: calc(33.33% - 20px);
+    flex: 1 1 300px; /* Set minimum width */
 }
 
 .portfolio-items img {
@@ -130,6 +140,7 @@ header nav a {
     border: none;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Take full width */
 }
 
 #contact button {
@@ -160,6 +171,14 @@ footer {
     .portfolio-items div {
         width: calc(50% - 20px);
     }
+
+    header nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+    }
+
+    header nav ul li {
+        margin-right: 0;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -170,5 +189,9 @@ footer {
 
     .portfolio-items div {
         width: 100%;
+    }
+
+    #contact input, #contact textarea {
+        padding: 0.2rem;
     }
 }
