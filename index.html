@@ -10,126 +10,148 @@
 <body>
     <!-- Header Section -->
     <header>
-        <nav>
-            <div class="logo">
-                <img src="doubleg.tech_logo.jpg" alt="Double G Technologies Logo">
-            </div>
-            <ul>
-                <li data-target="about"><a href="#">About</a></li>
-                <li data-target="services"><a href="#">Services</a></li>
-                <li data-target="portfolio"><a href="#">Portfolio</a></li>
-                <li data-target="contact"><a href="#">Contact</a></li>
-            </ul>
-</nav>
+        <div class="container">
+            <nav>
+                <div class="logo">Double G Technologies</div>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </dev>
     </header>
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Welcome to Double G Technologies</h1>
-        <p>Innovative Software Solutions for Zimbabwean Schools and Businesses</p>
-        <button id="learn-more">Learn More</button>
-    </section>
-<h1>Please be advised that this page is still under development</h1>
-    <h2>Our team is working tirelessly to solve all the problems within a short period of time</h2>
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Double G Technologies is a software company specializing in developing online learning platforms for Zimbabwean schools. Our primary focus is on creating user-friendly and interactive e-learning experiences for students, teachers, and administrators.</p>
-    </section>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container">
+                <h1>Welcome to Double G Technologies</h1>
+                <p>Innovative Software Solutions for Zimbabwean Schools and Businesses</p>
+                <button id="learn-more">Learn More</button>
+            </dev>
+        </section>
 
-    <!-- Services Section -->
-    <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>
-                <h3>Online Learning Platforms</h3>
-                <p>Primary, Secondary, and High School e-learning solutions</p>
-            </li>
-            <li>
-                <h3>Web Development</h3>
-                <p>Custom websites for businesses and organizations</p>
-            </li>
-            <li>
-                <h3>Software Development</h3>
-                <p>Custom software solutions for various industries</p>
-            </li>
-        </ul>
-    </section>
-<h1>Please be advised that this page is still under development</h1>
-    <h2>Our team is working tirelessly to solve all the problems within a short period of time</h2>
+        <!-- Notice Section -->
+        <section class="notice" id="notice">
+            <div class="container">
+                <h1>Notice</h1>
+                <h2>System is still under development</h2>
+                <p>Our team is working tirelessly to solve all problems within a short period.</p>
+            </dev>
+        </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio">
-        <h2>Our Portfolio</h2>
-        <div class="portfolio-items">
-            <div>
-                <img src="image1.jpg" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>Brief description of project 1</p>
+        <!-- About Section -->
+        <section class="features" id="features">
+            <div class="container">
+                <div id="about" class="feature">
+                    <h2>About Us</h2>
+                    <p>Double G Technologies is a software company specializing in developing online learning platforms for Zimbabwean schools. Our primary focus is on creating user-friendly and interactive e-learning experiences for students, teachers, and administrators.</p>
+                </div>
+
+                <!-- Services Section -->
+                <section id="services">
+                    <h2>Our Services</h2>
+                    <div class="container">
+                        <ul>
+                            <div class="feature">
+                                <li>
+                                    <h3>Online Learning Platforms</h3>
+                                    <p>Primary, Secondary, and High School e-learning solutions</p>
+                                </li>
+                            </div>
+                            <div class="feature">
+                                <li>
+                                    <h3>Web Development</h3>
+                                    <p>Custom websites for businesses and organizations</p>
+                                </li>
+                            </div>
+                            <div class="feature">
+                                <li>
+                                    <h3>Software Development</h3>
+                                    <p>Custom software solutions for various industries</p>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </section>
             </div>
-            <div>
-                <img src="image2.jpg" alt="Project 2">
-                <h3>Project 2</h3>
-                <p>Brief description of project 2</p>
-            </div>
-            <div>
-                <img src="image3.jpg" alt="Project 3">
-                <h3>Project 3</h3>
-                <p>Brief description of project 3</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Get in Touch</h2>
-        <p>Contact us for more information or to request a quote</p>
-        <ul class="social-icons">
-            <li>
-                <a href="#" target="_blank">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#" target="_blank">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#" target="_blank">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#" target="_blank">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
-            </li>
-        </ul>
-        <form id="contact-form">
-            <input type="text" placeholder="Name" id="name">
-            <input type="email" placeholder="Email" id="email">
-            <textarea placeholder="Message" id="message"></textarea>
-            <button id="send-button">Send</button>
-        </form>
-    </section>
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <h2>Our Portfolio</h2>
+            <div class="portfolio-items">
+                <div>
+                    <img src="image1.jpg" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>Brief description of project 1</p>
+                </div>
+                <div>
+                    <img src="image2.jpg" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>Brief description of project 2</p>
+                </div>
+                <div>
+                    <img src="image3.jpg" alt="Project 3">
+                    <h3>Project 3</h3>
+                    <p>Brief description of project 3</p>
+                </div>
+            </div>
+        </section>
 
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>Contact us for more information or to request a quote</p>
+            <ul class="social-icons">
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+            <form id="contact-form">
+                <input type="text" placeholder="Name" id="name" required>
+                <input type="email" placeholder="Email" id="email" required>
+                <textarea placeholder="Message" id="message" required></textarea>
+                <button id="send-button">Send</button>
+            </form>
+        </section>
+    </main>
     <!-- Footer Section -->
-        <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Double G Technologies</p>
+        <div class="container">
+            <p>&copy; 2024 Double G Technologies</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"></script>
 </body>
-</html> 
+</html>
