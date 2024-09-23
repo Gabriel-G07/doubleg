@@ -1,4 +1,14 @@
 /* Global Styles */
+
+:root {
+    --primary-color: #4a90e2;
+    --secondary-color: #f5a623;
+    --background-color: #e0e5ec;
+    --text-color: #333;
+    --shadow-color: #babecc;
+    --highlight-color: #ffffff;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,31 +18,33 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    color: var(--text-color);
+    background-color: #7547df76;
+    overflow-x: hidden; 
 }
 
 /* Header Styles */
+
 header {
     background-image: url('doubleg.tech_logo.jpg');
     background-size: 100% auto;
     background-position: center;
-    height: 80px; /* Adjust logo height */
+    height: 80px; 
     display: flex;
     justify-content: center;
     align-items: center;
-    position: sticky; /* Stick header to top */
+    position: sticky; 
     top: 0;
     z-index: 1000;
     background-color: #333;
 }
 
 header nav {
-    display: none; /* Hide nav on mobile */
+    display: none; 
 }
 
 /* Mobile Navigation */
+
 @media only screen and (max-width: 768px) {
     header {
         background-size: 50% auto;
@@ -61,7 +73,6 @@ header nav {
         margin-right: 0;
     }
 
-    /* Show mobile nav on click */
     .mobile-nav-toggle {
         display: block;
         position: absolute;
@@ -73,6 +84,7 @@ header nav {
 }
 
 /* Desktop Navigation */
+
 @media only screen and (min-width: 769px) {
     header nav {
         display: flex;
@@ -86,7 +98,12 @@ header nav {
 }
 
 /* Hero Styles */
+
 .hero {
+    text-align: center;
+    padding: 4rem 0;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: white;
     background-image: linear-gradient(to bottom, #333, #555);
     background-size: 100% 300px;
     background-position: 0% 100%;
@@ -94,19 +111,22 @@ header nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
-    position: relative; /* Allow absolute positioning */
+    position: relative; 
 }
 
 .hero h1 {
     font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
 .hero p {
     font-size: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 /* About Styles */
+
 #about {
     padding: 2rem;
 }
@@ -116,6 +136,7 @@ header nav {
 }
 
 /* Services Styles */
+
 #services {
     padding: 2rem;
     background-color: #f7f7f7;
@@ -136,6 +157,7 @@ header nav {
 }
 
 /* Portfolio Styles */
+
 #portfolio {
     padding: 2rem;
 }
@@ -149,7 +171,7 @@ header nav {
 .portfolio-items div {
     margin: 1rem;
     width: calc(33.33% - 20px);
-    flex: 1 1 300px; /* Set minimum width */
+    flex: 1 1 300px; 
 }
 
 .portfolio-items img {
@@ -159,7 +181,46 @@ header nav {
     border-radius: 10px;
 }
 
+/* Features Styles */
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4rem 0;
+}
+
+.feature {
+    flex-basis: calc(33.333% - 2rem);
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: var(--highlight-color);
+    border-radius: 15px;
+    box-shadow: 
+        -5px -5px 10px var(--highlight-color),
+        5px 5px 10px var(--shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+        -8px -8px 15px var(--highlight-color),
+        8px 8px 15px var(--shadow-color);
+}
+
+.feature h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.feature p {
+    font-size: 1rem;
+}
+
 /* Contact Styles */
+
 #contact {
     padding: 2rem;
 }
@@ -175,7 +236,7 @@ header nav {
     border: none;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Take full width */
+    width: 100%; 
 }
 
 #contact button {
@@ -187,28 +248,92 @@ header nav {
     cursor: pointer;
 }
 
-/* Footer Styles */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
+/* Call to Action Styles */
+
+.cta {
     text-align: center;
+    padding: 4rem 0;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Button Styles */
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #3a80d2;
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: var(--text-color);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
     clear: both;
 }
 
+/* Navigation Styles */
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+/* Logo Styles */
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 /* Responsive Design */
-@media only screen and (max-width: 768px) {
-    /* For mobile phones and tablets */
+
+@media (max-width: 768px) {
+    .feature {
+        flex-basis: 100%;
+    }
+
     .hero {
         height: 50vh;
     }
 
-        .portfolio-items div {
+    .portfolio-items div {
         width: calc(50% - 20px);
     }
 
     header nav ul {
-        flex-direction: column; /* Stack nav items vertically */
+        flex-direction: column; 
     }
 
     header nav ul li {
@@ -216,8 +341,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 480px) {
-    /* For smaller mobile phones */
+@media (max-width: 480px) {
     .hero {
         height: 30vh;
     }
@@ -229,4 +353,4 @@ footer {
     #contact input, #contact textarea {
         padding: 0.2rem;
     }
-} 
+}
