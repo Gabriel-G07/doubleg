@@ -38,6 +38,16 @@ header {
     object-fit: cover;
 }
 
+.favicon-container {
+    width: px; /* adjust size */
+    height: 16px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('doubleg_favicon.png');
+}
+
 .company-name {
     position: flex;
     margin-left: 10px;
