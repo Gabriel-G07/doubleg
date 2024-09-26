@@ -12,7 +12,7 @@
     <body>
         <!-- Header Section -->
         <header>
-            <div class="container">
+            <div class="">
                 <nav>
                     <div class="logo">
                         <img src="doubleg.tech_logo.jpg" alt="Double G Technologies Logo" class="logo-img">
@@ -38,15 +38,6 @@
                 </dev>
             </section>
 
-            <!-- Notice Section -->
-            <section class="notice" id="notice">
-                <div class="container">
-                    <h1>Notice</h1>
-                    <h2>System is still under development</h2>
-                    <p>Our team is working tirelessly to solve all problems within a short period.</p>
-                </dev>
-            </section>
-
             <!-- About Section -->
             <section class="features" id="features">
                 <div class="container">
@@ -57,24 +48,25 @@
 
                     <!-- Services Section -->
                     <section id="services">
-                        <h2>Our Services</h2>
-                        <div class="container">
+                        <h2 style=" color: #da0d21";>Our Services</h2>
+                        <br>
+                        <div>
                             <ul>
                                 <div class="feature">
                                     <li>
-                                        <h3>Online Learning Platforms</h3>
+                                        <h3 style=" color: #58f503";>Online Learning Platforms</h3>
                                         <p>Primary, Secondary, and High School e-learning solutions</p>
                                     </li>
                                 </div>
                                 <div class="feature">
                                     <li>
-                                        <h3>Web Development</h3>
+                                        <h3 style=" color: #58f503";>Web Development</h3>
                                         <p>Custom websites for businesses and organizations</p>
                                     </li>
                                 </div>
                                 <div class="feature">
                                     <li>
-                                        <h3>Software Development</h3>
+                                        <h3 style=" color: #58f503";>Software Development</h3>
                                         <p>Custom software solutions for various industries</p>
                                     </li>
                                 </div>
@@ -86,21 +78,21 @@
 
             <!-- Portfolio Section -->
             <section id="portfolio">
-                <h2>Our Portfolio</h2>
+                <h2 style=" color: #58f503";>Our Portfolio</h2>
                 <div class="portfolio-items">
                     <div class="feature">
                         <img src="doubleg.tech_logo.jpg" alt="Project 1">
-                        <h3>Project 1</h3>
+                        <h3 style=" color: #58f503";>Project 1</h3>
                         <p>Brief description of project 1</p>
                     </div>
                     <div class="feature">
                         <img src="doubleg.tech_logo.jpg" alt="Project 2">
-                        <h3>Project 2</h3>
+                        <h3 style=" color: #58f503";>Project 2</h3>
                         <p>Brief description of project 2</p>
                     </div>
                     <div class="feature">
                         <img src="doubleg.tech_logo.jpg" alt="Project 3">
-                        <h3>Project 3</h3>
+                        <h3 style=" color: #58f503";>Project 3</h3>
                         <p>Brief description of project 3</p>
                     </div>
                 </div>
@@ -108,10 +100,11 @@
 
             <!-- Contact Section -->
             <section id="contact">
-                <h2>Get in Touch</h2>
+                <h2 style=" color: #58f503";>Get in Touch</h2>
                 <p>Contact us for more information or to request a quote</p>
                 <div class="social-icons">
-                    <a href="https://wa.me/+263783298690" target="_blank">
+
+                    <a href="" id="whatsapp-link" target="_blank">
                         <i class="fa-brands fa-whatsapp"></i>
                     </a>
                     <a href="https://www.instagram.com/doubleg.tech/" target="_blank">
@@ -129,6 +122,22 @@
                     <a href="#" target="_blank">
                         <i class="fa-brands fa-twitter"></i>
                     </a>
+
+                    <div id="question-list" class="social-questions-list" style="display: none;">
+                        <h3>Select a Message to Send</h3>
+                        <ul class="">
+                            <li data-message="Can I please get more information on your services?">Information on Services</li>
+                            <li data-message="What are your software development process and methodologies?">Development Process</li>
+                            <li data-message="How long does a typical software development project take?">Project Timeline</li>
+                            <li data-message="What are your pricing models and packages?">Pricing and Packages</li>
+                            <li data-message="Do you provide maintenance and support services?">Maintenance and Support</li>
+                            <li data-message="Can you share case studies or success stories?">Case Studies</li>
+                            <li data-message="What technologies and programming languages do you use?">Technologies Used</li>
+                            <li data-message="How do you ensure data security and confidentiality?">Data Security</li>
+                            <li data-message="Other (type your question)">Other</li>
+                        </ul>
+                        <input type="text" id="custom-question" style="display: none; width: 100%; padding: 5px; font-size: 16px;" placeholder="Type your question">
+                    </div>
                 </div>
 
                 <form id="contact-form">
@@ -142,7 +151,7 @@
         
         <!-- Footer Section -->
         <footer>
-            <div class="container">
+            <div class="">
                 <p>&copy; 2024 Double G Technologies</p>
             </div>
         </footer>

@@ -1,63 +1,43 @@
-// Add event listener to menu items
-document.addEventListener("DOMContentLoaded", function() {
-    const menuItems = document.querySelectorAll("nav ul li");
+const whatsappLink = document.getElementById('whatsapp-link');
+const questionList = document.getElementById('question-list');
+const customQuestionInput = document.getElementById('custom-question');
+const questionItems = document.querySelectorAll('#question-list ul li');
 
-    menuItems.forEach(item => {
-        item.addEventListener("click", function(event) {
-            event.preventDefault();
-            const targetId = this.dataset.target;
-            const target = document.querySelector(`#${targetId}`);
-            target.scrollIntoView({ behavior: "smooth" });
-        });
+whatsappLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    questionList.style.display = 'block';
+});
+
+document.addEventListener('click', function(event) {
+    if (!document.getElementById('question-list').contains(event.target) && 
+        !document.getElementById('whatsapp-link').contains(event.target)) {
+        document.getElementById('question-list').style.display = 'none';
+    }
+});
+
+questionItems.forEach((item) => {
+    item.addEventListener('click', (e) => {
+        const selectedQuestion = e.target.dataset.message || e.target.textContent;
+        if (selectedQuestion === 'Other (type your question)') {
+            customQuestionInput.style.display = 'block';
+            questionList.style.display = 'none';
+        } else {
+            const whatsappUrl = `https://wa.me/+263783298690?text=${encodeURIComponent(selectedQuestion)}`;
+            whatsappLink.href = whatsappUrl;
+            questionList.style.display = 'none';
+            window.open(whatsappUrl, '_blank');
+        }
     });
 });
 
-// Add event listener to learn more button
-document.getElementById("learn-more").addEventListener("click", function(event) {
-    event.preventDefault();
-    const aboutSection = document.getElementById("about");
-    aboutSection.scrollIntoView({ behavior: "smooth" });
-});
-
-// Add event listener to contact form
-const contactForm = document.getElementById("contact-form");
-const nameInput = document.getElementById("name");
-const emailInput = document.getElementById("email");
-const messageInput = document.getElementById("message");
-
-contactForm.addEventListener("submit", function(event) {
-    event.preventDefault();
-    const name = nameInput.value.trim();
-    const email = emailInput.value.trim();
-    const message = messageInput.value.trim();
-
-    // Basic form validation
-    if (name === "" || email === "" || message === "") {
-        alert("Please fill in all fields.");
-        return;
+customQuestionInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        const customQuestion = customQuestionInput.value;
+        const whatsappUrl = `https://wa.me/+263783298690?text=${encodeURIComponent(customQuestion)}`;
+        whatsappLink.href = whatsappUrl;
+        questionList.style.display = 'none';
+        window.open(whatsappUrl, '_blank');
+        customQuestionInput.style.display = 'none';
+        customQuestionInput.value = '';
     }
-
-    // Send email using your preferred email service
-    console.log(`Name: ${name}, Email: ${email}, Message: ${message}`);
-
-    // Send email to marketing@doubleg.tech using fetch API
-    fetch("/send-email", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-            name,
-            email,
-            message
-        })
-    })
-    .then(response => response.json())
-    .then(data => console.log(data))
-    .catch(error => console.error(error));
-
-    // Reset form fields
-    nameInput.value = "";
-    emailInput.value = "";
-    messageInput.value = "";
 });
