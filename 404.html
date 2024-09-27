@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Not Found</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>Page Not Found</h1>
+	<p>The requested URL was not found on this website.</p>
+	<p>Redirecting to Home Page in <span id="countdown">33</span> seconds.</p>
+	
+	<script>
+		// Countdown and redirect script
+		var countdown = 33;
+		var interval = setInterval(function() {
+			document.getElementById('countdown').innerHTML = countdown;
+			countdown--;
+			if (countdown === 0) {
+				clearInterval(interval);
+				window.location.href = '/';
+			}
+		}, 1000); // 1000ms = 1 second
+	</script>
+</body>
+</html>
