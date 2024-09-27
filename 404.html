@@ -1,30 +1,106 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Page Not Found</title>
+    <link rel="icon" type="image/png" href="my_resources/pictures/doubleg_favicon.png">
+	<title>Double G Technologies</title>
 	<style>
 		body {
+			color: #fff;
+			background-color: #d46262;
 			font-family: Arial, sans-serif;
 			text-align: center;
 		}
+
+		.logo {
+			font-size: 1.5rem;
+			font-weight: bold;
+		}
+		
+		.logo-img {
+			width: 230px;
+			height: 230px;
+			border-radius: 20%;
+			object-fit: cover;
+		}
+
+		.card {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			max-width: 80%;
+			padding: 10px;
+			background-color: #ff4d4d;
+			border-radius: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.card-item {
+			background-color: #782323;
+			border-radius: 20px;
+			padding: 20px;
+			color: #ccc;
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+		h1 {
+			color: black;
+			font-size: 2.5vw;
+		}
+
+		p {
+			font-size: 1.5vw;
+		}
+
+		#countdown {
+			color: #ff4d4d;
+		}
+
+		@media only screen and (max-width: 768px) {
+			h1 {
+				font-size: 5vw;
+			}
+
+			p {
+				font-size: 3vw;
+			}
+		}
+	
 	</style>
 </head>
 <body>
-	<h1>Page Not Found</h1>
-	<p>The requested URL was not found on this website.</p>
-	<p>Redirecting to Home Page in <span id="countdown">33</span> seconds.</p>
-	
-	<script>
-		// Countdown and redirect script
-		var countdown = 33;
-		var interval = setInterval(function() {
-			document.getElementById('countdown').innerHTML = countdown;
-			countdown--;
-			if (countdown === 0) {
-				clearInterval(interval);
-				window.location.href = '/';
-			}
-		}, 1000); // 1000ms = 1 second
-	</script>
+	<div class="card">
+		<h1>Page Not Found</h1>
+		
+		<div class="card-item">
+			<p id="error-message">The requested URL "<span id="url"></span>" wasn't found on this website.</p>
+			<div class="logo">
+				<img src="my_resources/pictures/doubleg.tech_logo.jpg" alt="Double G Technologies Logo" class="logo-img">
+			</div>
+			<p>You are going to be Redirecting to our Home Page in <span id="countdown">5</span> seconds.</p>
+		</div>
+		
+		<script>
+			// Get current URL
+			const currentUrl = window.location.href;
+			
+			// Display current URL in error message
+			document.getElementById('url').innerHTML = currentUrl;
+			
+			// Countdown and redirect script
+			var countdown = 7;
+			var interval = setInterval(function() {
+				document.getElementById('countdown').innerHTML = countdown;
+				countdown--;
+				if (countdown === 0) {
+					clearInterval(interval);
+					window.location.href = '/';
+				}
+			}, 1000);
+		</script>
+	</div>
 </body>
 </html>

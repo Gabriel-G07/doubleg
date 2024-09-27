@@ -16,7 +16,7 @@ body {
 /* Header Styles */
 
 header {
-    background-color: #0f0393; /* Deep Blue */
+    background-color: #061a3d;
     padding: 1rem;
     text-align: center;
 }
@@ -38,6 +38,15 @@ header nav a {
     text-decoration: none;
 }
 
+.mainuotech_logo {
+    position: fixed;
+    width: 130px;
+    height: 130px;
+    border-radius: 25%;
+    object-fit: cover;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 /* Main Styles */
 
 main {
