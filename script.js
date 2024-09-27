@@ -2,6 +2,16 @@ const whatsappLink = document.getElementById('whatsapp-link');
 const questionList = document.getElementById('question-list');
 const customQuestionInput = document.getElementById('custom-question');
 const questionItems = document.querySelectorAll('#question-list ul li');
+const sliderImages = document.querySelectorAll('.slider img');
+
+let currentImageIndex = 0;
+
+setInterval(() => {
+    sliderImages[currentImageIndex].style.display = 'none';
+    currentImageIndex = (currentImageIndex + 1) % sliderImages.length;
+    sliderImages[currentImageIndex].style.display = 'block';
+}, 3000); 
+
 
 whatsappLink.addEventListener('click', (e) => {
     e.preventDefault();
