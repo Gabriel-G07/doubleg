@@ -177,10 +177,10 @@ body{
     position: absolute;
     bottom: -.5rem;
     left: 0;
-    height: 11rem;
+    height: 8rem;
     width: 100%;
-    background: url(../images/wave.png);
-    background-size: 100rem 11rem;
+    background: url(../../Pictures/wave.png);
+    background-size: 90rem 11rem;
     animation: waves 8s linear infinite;
     background-repeat: repeat-x;
 }
