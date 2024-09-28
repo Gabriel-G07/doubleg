@@ -77,7 +77,8 @@
     
     footer {
         position: fixed;
-        height: 30px;   
+        height: 30px; 
+        margin-bottom: -15px;  
     }
 
     /* About Styles */
@@ -179,6 +180,10 @@
 
     #contact button {
         padding: 0.5rem 1rem;
+    }
+
+    .social_media, .email_message {
+        flex-basis: 50%;
     }
 
     /* Call to Action Styles */

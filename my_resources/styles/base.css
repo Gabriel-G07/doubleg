@@ -149,10 +149,10 @@ footer {
     background-color: #2c2a29;
     color: #f62424;
     text-align: center;
-    padding: 1rem 0;
+    padding: 1.5rem ;
     clear: both;
     width: 100%;
-    margin-bottom: 0;
+    
     bottom: 0;
     flex-direction: row;
     display: flex;
@@ -216,7 +216,13 @@ footer {
     font-size: 1rem;
 }
 
-#contact {
+
+/* Contact Section */
+.contact {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #bd6c6c;
 }
 
@@ -226,23 +232,86 @@ footer {
     justify-content: center;
 }
 
-.contact .email_message {
-    display: flex;
+.contact-header {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-.contact .contact-header {
-    display: flex;
+.contact-header h2 {
+    margin-bottom: 10px;
 }
 
-.contact-items img {
-    width: 100%;
-    object-fit: cover;
+.social_media, .email_message {
+    flex-basis: 45%;
+    margin: 20px;
+    padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#contact form {
+.social_media h3, .email_message h3 {
+    margin-top: 0;
+}
+
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.social-icons div {
+    margin: 10px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.social-questions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-questions-list li {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.social-questions-list li:hover {
+    color: #ccc;
+}
+
+.email_message form {
     display: flex;
     flex-direction: column;
+}
+
+.email_message input, .email_message textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.email_message button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.email_message button:hover {
+    transform: scale(1.1);
 }
 
 #contact input, #contact textarea {

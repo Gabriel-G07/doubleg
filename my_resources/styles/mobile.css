@@ -8,19 +8,27 @@
     }
     
     header {
-        height: 30px;
+        height: 45px;
         text-align: center;
         align-items: center;
         
     }
     
+    .company-name {
+        display: none;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
     .logo-img {
         position: absolute;
-        top: 50%;
+        top: 95%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 130px;
-        height: 130px;
+        width: 100px;
+        height: 100px;
         border-radius: 50%;
         object-fit: cover;
     }
@@ -122,10 +130,8 @@
         border-radius: 40px;
     }
 
-    .contact-items .social_media {
-        margin: 0.5rem;
-        width: calc(50% - 10px);
-        flex: 1 1 200px; 
+    .social_media, .email_message {
+        flex-basis: 100%;
     }
 
     .contact-items img {
