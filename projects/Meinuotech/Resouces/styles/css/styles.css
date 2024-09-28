@@ -110,8 +110,9 @@ body{
 }
 
 .header .logo img{
-    width: 130%;
-    height: 3rem;
+    width: 100%;
+    border-radius: 20px;
+    height: 6rem;
     top: 0;
     left: 0;
 }
