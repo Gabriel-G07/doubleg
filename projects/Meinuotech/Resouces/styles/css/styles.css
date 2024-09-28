@@ -151,7 +151,7 @@ body{
 .home{
     min-height: 100vh;
     width: 100vw;
-    background-image: url(../../../Pictures/ads/logo.jpg);
+    background-image: url(../../Pictures/excavators/excavator3.jpg);
     background-size: cover;
     display: flex;
     align-items: center;
@@ -329,7 +329,7 @@ body{
   }   
 
 .counters {
-	background-image: url(../../../Pictures/ads/ads1.jpg);
+	background-image: url(../../Pictures/rollers\(compactors\)/compactors/compactor.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -460,7 +460,7 @@ body{
 .communicate{
     text-align: center;
     align-items: center;
-    background-image: url(../../../Pictures/ads/ads2.jpg);
+    background-image: url(../../Pictures/front_loaders/front_loader2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -1011,7 +1011,7 @@ body{
             width: 100vw;
             text-align: center;
             padding: 0 2rem;
-            background: url(../../../Pictures/faq.jpg);
+            background: url(../../Pictures/faq.jpg);
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -1379,6 +1379,7 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 15px;
 }
 
 .product-card h3 {
@@ -1403,8 +1404,33 @@ body{
     display: inline-block;
 }
 
+.whatsapp-icon {
+    color: #25D366;
+    font-size: 30px;
+  }
+
+  
 .whatsapp-link img {
     width: 24px;
     height: 24px;
     margin-right: 10px;
 }
+
+.whatsapp-btn {
+    background-color: #201e3a;
+    color: #25D366;
+    border: none;
+    align-items: flex-start;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .whatsapp-btn:hover {
+    background-color: #3000de;
+    color: #fff;
+  }
+  
+  .whatsapp-btn i {
+    margin-right: 10px;
+  }
