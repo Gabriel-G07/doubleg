@@ -853,10 +853,7 @@ body{
             padding: 60px 0 30px 0;
         }
         
-        .footer .footer-top .footer-info,
-        .footer .footer-top .footer-links,
-        .footer .footer-top .footer-contact,
-        .footer .footer-top .footer-newsletter {
+        .footer .footer-top .footer-info, .footer .footer-top .footer-links, .footer .footer-top .footer-contact {
             margin-bottom: 30px;
         }
         
