@@ -968,6 +968,7 @@ body{
         .footer .copyright {
             text-align: center;
             padding-top: 30px;
+
         }
         
         @media (min-width: 768px) {
@@ -1432,3 +1433,39 @@ body{
   .whatsapp-btn i {
     margin-right: 10px;
   }
+
+  .col-lg-3.col-md-6.footer-contact {
+    font-size: 1.5rem;
+}
+
+.footer-contact strong {
+    color: #7683f1; /* Strong text color */
+}
+
+.footer-contact a {
+    color: #337ab7; /* Link color */
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    color: #23527c; /* Link hover color */
+}
+
+.doubleg_panel {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.doubleg_logo {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
