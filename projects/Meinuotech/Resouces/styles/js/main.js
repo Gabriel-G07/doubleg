@@ -1,3 +1,10 @@
+var currentUrl = window.location.href;
+var rootUrl = currentUrl.split('/')[0] + '//' + currentUrl.split('/')[2] + '/';
+var newUrl = rootUrl + 'meinuotech';
+if (!currentUrl.endsWith('/meinuotech')) {
+  window.history.pushState({}, '', newUrl);
+}
+
 $(document).ready(function(){
 
      $('.fa-bars').click(function(){
