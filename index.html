@@ -24,6 +24,9 @@
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
+        <meta name="keywords" content="Technology Companies, IT Zimbabwe, ">
+        <meta name="description" content="Discover Gabriel G Zhou's work with software companies in Zimbabwe, offering online learning platforms and advertising services.">
+        <meta name="keywords" content="Gabriel G Zhou, Gabriel Garainesu, Gabriel, Double G, Gabriel Garainesu Zhou, Software Companies Zimbabwe, Zimbabwe Online Learning Platforms, Zimbabwe Advertisement">
     </head>
     
     <body>
@@ -44,12 +47,163 @@
                 </nav>
             </div>
         </header>
+        <header class="main-header">
+
+            <!-- header upper -->
+            <div class="header-upper">
+                <div class="container">
+                    <ul class="top-left">
+                        <li><i class="fa fa-phone"></i>Call:  +263783298690 </li>
+                        <li><i class="fa fa-envelope"></i>Email:  info@mtsunset.ac.zw</li>
+                    </ul>
+                    <div class="top-right">
+                        <div class="search-box-area">   
+                            <div class="search-toggle"><i class="fa fa-search"></i></div>
+                            <div class="search-box">
+                                <form method="post" action="#">
+                                    <div class="form-group">
+                                        <input type="search" name="search" placeholder="Search Here" required>
+                                        <button type="submit"><i class="fa fa-search"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <ul class="social-top">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>             
+                </div>
+            </div>
+            <!-- end header upper -->
+
+            <!-- header lower/fixed-header -->     
+            <div class="header-lower">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-12 col-xs-12">
+                            <div class="logo-box">
+                                <a href="{% url 'WebsiteHome' %}"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-sm-12 col-xs-12">
+                            <div class="menu-bar">
+                                <nav class="main-menu">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+                                    <div class="navbar-collapse collapse clearfix">
+                                        <ul class="navigation clearfix">
+                                            <li ><a href="{% url 'WebsiteHome' %}">Home</a>
+                                            </li>
+                                            <li ><a href="{% url 'students_applications' %}">Enrole</a></li>
+                                            <li ><a href="{% url 'jobs_applications' %}">Apply for a job</a></li>
+                                            <li class="dropdown"><a href="#">About Us</a>
+                                                <ul>
+                                                    <li><a href="{% url 'who-we-are' %}">Who We are</a></li>
+                                                    <li><a href="{% url 'website_message' %}">Principal's Message</a></li>
+                                                    <li><a href="{% url 'vision-mission-objectives'  %}">Mission,Vision &amp; Objective</a></li>
+                                                    <li><a href="{% url 'objectives-detail' %}">Objectives</a></li>
+                                                    <li><a href="{% url 'staff&members' %}">Administrative Staff &amp; Faculty Members</a></li>
+                                                    <li><a href="{% url 'resources&facilities' %}">Resources &amp; Facilities</a></li>
+                                                    <li><a href="{% url 'history' %}">History</a></li>
+                                                    <li><a href="{% url 'service-details' %}">Services</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown"><a href="#">Academics</a>
+                                                <ul>
+                                                    <li><a href="{% url 'academic-information' %}">Academic Information</a></li>
+                                                    <li><a href="{% url 'academic_grades' %}">Offered Grades</a></li>
+                                                    <li><a href="{% url 'admission-notices' %}">Admission Notices</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="{% url 'contact' %}">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end header lower/fixed-header -->
+
+
+            <!--sticky header-->
+            <div class="sticky-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-12 col-xs-12">
+                            <div class="logo-box">
+                                <a href="{% url 'WebsiteHome' %}"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-sm-12 col-xs-12">
+                            <div class="menu-bar">
+                                <nav class="main-menu">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+                                    <div class="navbar-collapse collapse clearfix">
+                                        <ul class="navigation clearfix">
+                                            <li ><a href="{% url 'WebsiteHome' %}">Home</a>
+                                            </li>
+                                            <li ><a href="{% url 'students_applications' %}">Enrole</a></li>
+                                            <li ><a href="{% url 'jobs_applications' %}">Apply for a job</a></li>
+                                            <li class="dropdown"><a href="#">About Us</a>
+                                                <ul>
+                                                    <li><a href="{% url 'who-we-are' %}">Who We are</a></li>
+                                                    <li><a href="{% url 'website_message' %}">Principal's Message</a></li>
+                                                    <li><a href="{% url 'vision-mission-objectives'  %}">Mission,Vision &amp; Objective</a></li>
+                                                    <li><a href="{% url 'objectives-detail' %}">Objectives</a></li>
+                                                    <li><a href="{% url 'our-team' %}">Administrative Staff &amp; Faculty Members</a></li>
+                                                    <li><a href="{% url 'resources&facilities' %}">Resources &amp; Facilities</a></li>
+                                                    <li><a href="{% url 'history' %}">History</a></li>
+                                                    <li><a href="{% url 'service-details' %}">Services</a></li>
+                                            
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown"><a href="javascript:void(0)">Academics</a>
+                                                <ul>
+                                                    <li><a href="{% url 'academic-information' %}">Academic Information</a></li>
+                                                    <li><a href="{% url 'academic_grades' %}">Academic Departments</a></li>
+                                                <li><a href="{% url 'admission-notices' %}">Admission Notices</a></li>
+                                            </ul>
+                                            </li>
+                                                <li class="dropdown"><a href="#">Events</a>
+                                            </li>
+                                            <li><a href="{% url 'contact' %}">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end sticky header -->
+
+        </header>
         
         <main>
             <!-- Hero Section -->
             <section class="hero" id="home">
                 <div class="container">
-                    <h1>Double G Technologies Welcomes You</h1>
+                    <h1>Double GARAINESU Technologies Welcomes You</h1>
                     <p>Innovative Software Solutions for Zimbabwean Schools and Businesses</p>
                 </dev>
             </section>
@@ -137,7 +291,6 @@
                                 <img src="projects/Meinuotech/Resouces/Pictures/backhoes/backhoe2.jpg" alt="backhoes">
                                 <img src="projects/Meinuotech/Resouces/Pictures/excavators/excavator4.jpg" alt="Excavators">
                                 <img src="projects/Meinuotech/Resouces/Pictures/dump_trucks/dump_truck.jpg" alt="Dump Trucks">
-                                
                             </figure>
                         </a>
                         <h4 style="color: #58f503;">Fast, Efficient, Reliable Services</h4>
@@ -147,8 +300,9 @@
 
                     <div class="feature">
                         <img src="my_resources/pictures/doubleg.tech_logo.jpg" alt="Project 2">
-                        <h3 style=" color: #58f503";>Project 2</h3>
-                        <p>Brief description of project 2</p>
+                        <h3 style=" color: #58f503";>Primary And Secondary E-Learning</h3>
+                        <p>Full web based systems for primary and secondary schools</p>
+                        <p><a href="projects/Meinuotech/index.html" target="_blank">>>Learn more:</a></p>
                     </div>
                     <div class="feature">
                         <img src="my_resources/pictures/doubleg.tech_logo.jpg" alt="Project 3">
@@ -233,6 +387,76 @@
         <footer>
             <div class="footer">
                 <p>&copy; 2024 Double G Technologies</p>
+            </div>
+        </footer>
+        <footer class="main-footer sec-pad">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12 footer-column">
+                            <div class="logo-wideget footer-wideget">
+                                <div class="footer-logo"><a href="{% url 'WebsiteHome' %}"><figure><img src="https://i.imgur.com/juL1aAc.png" alt=""></figure></a></div>
+                                <div class="text">
+                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin  Richard Latin professor at Hampden.</p>
+                                </div>
+                                <ul class="footer-social">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-6 col-xs-12 footer-column">
+                            <div class="link-wideget footer-wideget">
+                                <div class="footer-title"><h4>Quick Links</h4></div>
+                                <ul class="list">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Notices</a></li>
+                                    <li><a href="#">Gallery</a></li>
+                                    <li><a href="#">Events</a></li>
+                                    <li><a href="#">Admission</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 footer-column">
+                            <div class="gallery-wideget footer-wideget">
+                                <div class="footer-title"><h4>Our Gallery</h4></div>
+                                <ul class="img-list">
+                                    <li><a href="{% url 'gallery' %}"><figure><img src="{% static 'images/footer/1.jpg' %}" alt=""></figure></a></li>
+                                    <li><a href="{% url 'gallery' %}"><figure><img src="{% static 'images/footer/2.jpg' %}" alt=""></figure></a></li>
+                                    <li><a href="{% url 'gallery' %}"><figure><img src="{% static 'images/footer/3.jpg' %}" alt=""></figure></a></li>
+                                    <li><a href="{% url 'gallery' %}"><figure><img src="{% static 'images/footer/4.jpg' %}" alt=""></figure></a></li>
+                                    <li><a href="{% url 'gallery' %}"><figure><img src="{% static 'images/footer/5.jpg' %}" alt=""></figure></a></li>
+                                    <li><a href="{% url 'gallery' %}"><figure><img src="{% static 'images/footer/6.jpg' %}" alt=""></figure></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 footer-column">
+                            <div class="tag-wideget footer-wideget">
+                                <div class="footer-title"><h4>Popular Tags</h4></div>
+                                <ul class="tag-list">
+                                    <li><a href="#">Charity</a></li>
+                                    <li><a href="#">ECA</a></li>
+                                    <li><a href="#">Donation</a></li>
+                                    <li><a href="#">Hostel</a></li>
+                                    <li><a href="#">Couses</a></li>
+                                    <li><a href="#">Canteen</a></li>
+                                    <li><a href="#">Computer labs</a></li>
+                                    <li><a href="#">Principal</a></li>
+                                    <li><a href="#">Holidays</a></li>
+                                
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom centred">
+                <div class="container">
+                    <div class="copyright"><p>Copyright © <a href="#">Mount Sunset</a> 2024. All Rights Reserved</p></div>
+                </div>
             </div>
         </footer>
 
