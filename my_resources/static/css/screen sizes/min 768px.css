@@ -1,0 +1,26 @@
+@media only screen and (min-width: 768px){
+    
+    /* Logo Styles */
+    
+	.logo {
+		font-size: 1.5rem;
+		font-weight: bold;
+		position: fixed;
+		z-index: 1001;
+	}
+	
+  .logo-img {
+      margin-top: 1px;
+      margin-left: 1px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+  }
+
+  .header-lower{
+    z-index:999;
+    height: 40px;
+  }
+
+      
+}

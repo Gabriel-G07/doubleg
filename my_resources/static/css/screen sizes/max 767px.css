@@ -1,0 +1,41 @@
+/* Mobile Navigation */
+
+@media only screen and (max-width: 767px) {
+    
+    .home_boxed .body_wrapper {
+        width:94%;
+        margin:0 3% 0 3%
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .header-upper {
+        display: none;
+    }
+    
+	.header-lower{
+        height: 35px;
+	}
+
+    .logo-img {
+        position: fixed;
+        top: 6%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+		z-index: 1000;
+    }
+
+    .dif_footer {
+        position: relative;
+        height: 25px; 
+    }
+
+}
